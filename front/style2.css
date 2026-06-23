@@ -1,0 +1,31 @@
+h3 {
+    text-align: center;
+    color: rgb(107, 20, 188);
+
+}
+
+body {
+    background-color: rgb(255, 84, 84);
+
+
+}
+
+p  {
+   color: rgb(8, 0, 255);
+
+}
+
+h2 {
+    color: rgb(255, 255, 7);
+
+}
+
+a {
+    align-items: baseline;
+
+}
+
+img {
+    align-self: center;
+
+}
