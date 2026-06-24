@@ -1,7 +1,7 @@
-h3 {
-    text-align: center;
-    color: rgb(107, 20, 188);
-
+h1 {
+    color: #0056b3;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 body {
@@ -10,22 +10,35 @@ body {
 
 }
 
-p  {
-   color: rgb(8, 0, 255);
-
+p {
+    color: #0011ff;
+    margin-bottom: 15px;
 }
 
 h2 {
-    color: rgb(255, 255, 7);
+    color: #fffb00;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 4px solid #8800ff;
+    padding-left: 10px;
+}
+a {
+    align-items: center;
 
 }
 
-a {
-    align-items: baseline;
-
+.link-text {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
 }
 
 img {
-    align-self: center;
-
+    max-width: 100%;
+    height: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
