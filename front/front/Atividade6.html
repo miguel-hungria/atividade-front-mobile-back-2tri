@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style6.css">
+  <title>Atividade 6 - Painel</title>
+</head>
+<body>
+
+  <h1>Painel de Controle da copa</h1>
+
+  <button onclick="document.getElementById('meu-formulario').classList.toggle('aberto')">
+    Abrir formulário
+  </button>
+
+  <div id="meu-formulario">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email"><br><br>
+
+    <button type="submit">Enviar</button>
+  </div>      
+
+  <div class="painel-grid">
+    
+    <div class="coluna">
+      <h2>Avisos de Jogos da Copa</h2>
+      <div class="card">
+        <h2>Inglaterra x República do Congo</h2>
+        <p>Dia 01 às 13:00</p>
+      </div>
+      <div class="card">
+        <h2>Bélgica x Senegal</h2>
+        <p>Dia 01 às 17:00.</p>
+      </div>
+      <div class="card">
+        <h2>Estados Unidos x Bósnia</h2>
+        <p>Dia 01 às 21:00.</p>
+      </div>
+
+      <h2>Lista de Tarefas</h2>
+      <div class="card card-tarefa">
+        <h3>Estudar para Prova</h3>
+        <p>Revisar a matéria de cálculo para quarta-feira.</p>
+        <span class="badge badge-alta">Alta prioridade</span>
+      </div>
+      <div class="card card-tarefa">
+        <h3>Entregar Trabalho</h3>
+        <p>Enviar o relatório de física pelo portal.</p>
+        <span class="badge badge-media">Média prioridade</span>
+      </div>
+    </div>
+
+    <div class="coluna">
+      <h2>Melhores jogadores dos jogos hoje</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Harry Kane</td>
+            <td>com 3 gols</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Christian Pulisic</td>
+            <td>com 2 gols</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Melhores da copa</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>idade</th>
+            <th>Gols</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Messi</td>
+            <td>39 anos</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Ebappé</td>
+            <td>27 anos</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <td>Miroslav Klose</td>
+            <td>Já falecido</td>
+            <td>16 gols</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div> </body>
+</html>

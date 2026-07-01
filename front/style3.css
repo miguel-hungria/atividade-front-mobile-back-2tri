@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(60, 255, 0);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 0, 0);
 
 }
@@ -15,4 +15,12 @@ body{
 input{
     font-size: 80%;
 
+}
+
+input[type="time"] {
+    font-size: 24px;
+    padding: 14px 18px;
+    width: 220px;
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
 }
