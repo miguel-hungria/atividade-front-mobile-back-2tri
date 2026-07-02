@@ -14,7 +14,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f8f8f8;
+    background-color: #4cff49;
     color: #333;
   }
   
@@ -24,35 +24,35 @@ body {
   }
   
   h2 {
-    color: #4a5568;
+    color: #ff1919;
     margin-top: 25px;
     margin-bottom: 15px;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 5px;
   }
   
-  /* Requisito: Estrutura do Painel (Cards e Tabelas na mesma página) */
+
   .painel-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
   }
   
-  /* Configuração para telas maiores (computadores) ficarem lado a lado */
+
   @media (min-width: 768px) {
     .painel-grid {
       grid-template-columns: 1fr 1fr;
     }
   }
   
-  /* Componente: Cards (Geral e Tarefas) */
+
   .card {
     background-color: white;
     padding: 16px;
     margin-bottom: 12px;
     border-radius: 8px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid #cbd5e0; /* Detalhe lateral padrão */
+    border-left: 4px solid #cbd5e0; 
   }
   
   .card h2, .card h3 {
@@ -69,9 +69,9 @@ body {
     font-size: 0.95rem;
   }
   
-  /* Customização dos Cards de Tarefas */
+
   .card-tarefa {
-    border-left-4px: solid #4a5568;
+    border-left: 4px solid #4a5568;
   }
   
   .badge {
@@ -86,7 +86,7 @@ body {
   .badge-alta { background-color: #fed7d7; color: #c53030; }
   .badge-media { background-color: #feebc8; color: #c05621; }
   
-  /* Componente: Tabelas */
+ 
   table {
     width: 100%;
     border-collapse: collapse;
@@ -94,7 +94,7 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
-    overflow: hidden; /* Garante que as bordas arredondadas funcionem na tabela */
+    overflow: hidden; 
   }
   
   th, td {
@@ -110,10 +110,10 @@ body {
   }
   
   tr:nth-child(even) {
-    background-color: #f7fafc; /* Linhas alternadas com cor levemente diferente */
+    background-color: #f7fafc; 
   }
   
-  /* Status de Presença dentro da tabela */
+ 
   .status {
     padding: 4px 8px;
     border-radius: 4px;
@@ -124,7 +124,7 @@ body {
   .presente { background-color: #c6f6d5; color: #22543d; }
   .ausente { background-color: #fed7d7; color: #9b2c2c; }
   
-  /* Requisito: Botão Estilizado */
+
   .container-botao {
     margin-bottom: 25px;
   }
