@@ -1,0 +1,40 @@
+<h1>Atividade 8: Responder as 5 perguntas</h1>
+
+<h2>1- Cite dois exemplos de situações em que o navegador usaria o método GET:</h2>
+<p>Acessar um site quando você digita www.google.com na barra de endereços e dá Enter.</p>
+<p>Fazer uma pesquisa quando você digita um termo na barra de busca e os resultados são carregados</p>
+
+<h2>2- Cite dois exemplos de situações em que o navegador usaria o método POST.</h2>
+<p>Fazer login quando você preenche os campo de usuário e senha e clica em entrar.</p>
+<p>Enviar um formulário quando você está se cadastrando em um site e envia suas informações pessoais.</p>
+
+<h2>3- Explique com suas palavras o que significa o código de status 404.</h2>
+<p>O status 404 é quando ele carrega o servidor e está funcionando, mas não consegui encontrar um arquivo ou página em
+    especifico.</p>
+
+<h2>4- Explique o que acontece quando o servidor responde com 201.</h2>
+<p>Significa que a requisição do navegador foi bem sucedida e como resultado, um novo recurso foi criado com sucesso no
+    servidor.</p>
+
+<h2>5- Escreva um pedido e uma resposta HTTP para o cadastro de um aviso escolar.</h2>
+
+<p> Quando ele envia o post:
+    POST /api/avisos HTTP/1.1
+    Host: diarioescolar.com
+    Content-Type: application/json
+
+    {
+    "titulo": "Reunião de Pais e Mestres",
+    "data": "2026-07-15",
+    "conteúdo": "A nossa próxima reunião acontecerá na quadra coberta às 19h."
+    }</p>
+
+<p>Quando ele retorna o status 201
+    HTTP/1.1 201 Created
+    Content-Type: application/json
+
+    {
+    "status": "sucesso",
+    "mensagem": "Aviso escolar cadastrado com sucesso!",
+    "id_aviso": 1042
+    }</p>

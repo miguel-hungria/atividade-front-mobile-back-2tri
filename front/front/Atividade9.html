@@ -1,0 +1,55 @@
+<h1>Atividade 9: Responder as atividades</h1>
+<h2>1- Escreva um JSON com os dados de um aviso escolar.</h2>
+<li>{
+    "id": 105,
+    "titulo": "Alteração no Horário das Aulas",
+    "data_publicacao": "2026-07-06 10:00:00",
+    "remetente": "Diretoria Pedagógica",
+    "destinatarios": ["Fundamental II", "Ensino Médio"],
+    "conteudo": "Informamos que, devido ao conselho de classe, as aulas de sexta-feira terminarão uma hora mais cedo.",
+    "importante": true
+    }</li>
+
+<h2>2- Escreva um JSON com os dados de uma tarefa.</h2>
+<p>{
+    "id": 4022,
+    "materia": "História",
+    "titulo": "Relatório sobre a Revolução Industrial",
+    "descricao": "Escrever um resumo de no mínimo duas páginas destacando os impactos sociais e tecnológicos.",
+    "data_entrega": "2026-07-20",
+    "nota_maxima": 10.0,
+    "entregue": false
+    }</p>
+
+<h2>3- Escreva o pedido e a resposta de um login com e-mail e senha.</h2>
+<p>quando vai o POST:
+    POST /api/login HTTP/1.1
+    Host: escola.com
+    Content-Type: application/json
+
+    {
+    "email": "aluno.silva@escola.com",
+    "senha": "SenhaSegura123!"
+    }
+</p>
+<p>
+    quando der o status 200:
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+    "autenticado": true,
+    "mensagem": "Login efetuado com sucesso!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c3VhcmlvI... (token omitido por espaço)",
+    "usuario": {
+    "nome": "Lucas Silva",
+    "perfil": "aluno"
+    }
+    }
+</p>
+
+<h2>4- Explique por que o servidor usa o código 201 ao criar um registro.</h2>
+<p></p>
+
+<h2>5- Escreva o passo a passo completo de um cadastro de usuário, desde o preenchimento do formulário até a resposta do
+servidor.</h2>
