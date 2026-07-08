@@ -1,5 +1,5 @@
 <h1>Atividade 9: Responder as atividades</h1>
-<h2>1- Escreva um JSON com os dados de um aviso escolar.</h2>
+<h2>1- Escreva um JSON com os dados de um aviso escolar:</h2>
 <li>{
     "id": 105,
     "titulo": "Alteração no Horário das Aulas",
@@ -10,7 +10,7 @@
     "importante": true
     }</li>
 
-<h2>2- Escreva um JSON com os dados de uma tarefa.</h2>
+<h2>2- Escreva um JSON com os dados de uma tarefa:</h2>
 <p>{
     "id": 4022,
     "materia": "História",
@@ -21,7 +21,7 @@
     "entregue": false
     }</p>
 
-<h2>3- Escreva o pedido e a resposta de um login com e-mail e senha.</h2>
+<h2>3- Escreva o pedido e a resposta de um login com e-mail e senha:</h2>
 <p>quando vai o POST:
     POST /api/login HTTP/1.1
     Host: escola.com
@@ -33,7 +33,8 @@
     }
 </p>
 <p>
-    quando der o status 200:
+    Quando der o status 200:
+
     HTTP/1.1 200 OK
     Content-Type: application/json
 
@@ -48,8 +49,29 @@
     }
 </p>
 
-<h2>4- Explique por que o servidor usa o código 201 ao criar um registro.</h2>
-<p></p>
+<h2>4- Explique por que o servidor usa o código 201 ao criar um registro:</h2>
+
+<p> código 201 Created avisa explicitamente ao navegador ou aplicativo que a ação não foi apenas processada, mas
+    resultou na criação física e bem-sucedida de um novo recurso no banco de dados.</p>
 
 <h2>5- Escreva o passo a passo completo de um cadastro de usuário, desde o preenchimento do formulário até a resposta do
-servidor.</h2>
+    servidor:</h2>
+
+<li>Preenchimento do Formulário: O usuário acessa a página de cadastro no navegador, digita seus dados e clica no botão "Cadastrar".</li>
+
+    <li>Validação no Cliente: O navegador verifica rapidamente se o e-mail tem um formato válido e se a senha cumpre os requisitos mínimos, evitando enviar dados obviamente errados para o servidor.</li>
+
+    <li>Disparo da Requisição HTTP: O navegador empacota os dados digitados em um formato estruturado,
+    monta uma requisição utilizando o método POST e envia esses dados pela internet até o endereço do servidor.</li>
+
+    <li>Processamento e Validação no Servidor: O servidor recebe a requisição e faz novas checagens de segurança e
+    de regras de negócio. Ele verifica, por exemplo, se aquele e-mail já não está cadastrado no sistema por outra
+    pessoa.</li>
+
+    <li>Criptografia e Persistência: Caso os dados estejam corretos, o servidor criptografa a senha do usuário e salva o novo registro de usuário dentro do banco de dados.</li>
+
+    <li>Resposta do Servidor: Após salvar com sucesso, o servidor gera uma resposta HTTP com o status 201 Created, incluindo
+    uma mensagem de confirmação de sucesso.</li>
+
+    <li>Atualização da Interface: O navegador recebe a resposta do servidor, lê o status de sucesso e atualiza a tela do
+    usuário, geralmente redirecionando-o para a página de login ou para o painel inicial do sistema já autenticado.</li>
